@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+    <title>JavaScript Functions Example</title>
+</head>
+<body>
+    <h1>JavaScript Functions Example</h1>
+
+    <script>
+        // Function to output the sum of two values
+        function calculateSum(a, b) {
+            return a + b;
+        }
+
+        // Function to invoke another function
+        function invokeAnotherFunction() {
+            alert("Another function is invoked!");
+        }
+
+        // Function with if-else condition
+        function checkNumber(value) {
+            if (value > 0) {
+                return "Positive";
+            } else if (value < 0) {
+                return "Negative";
+            } else {
+                return "Zero";
+            }
+        }
+
+        // Function with switch case condition
+        function getDayOfWeek(dayNumber) {
+            let day;
+            switch (dayNumber) {
+                case 1:
+                    day = "Sunday";
+                    break;
+                case 2:
+                    day = "Monday";
+                    break;
+                case 3:
+                    day = "Tuesday";
+                    break;
+                case 4:
+                    day = "Wednesday";
+                    break;
+                case 5:
+                    day = "Thursday";
+                    break;
+                case 6:
+                    day = "Friday";
+                    break;
+                case 7:
+                    day = "Saturday";
+                    break;
+                default:
+                    day = "Invalid day number";
+            }
+            return day;
+        }
+
+        // Example usage
+        const sumResult = calculateSum(5, 10);
+        console.log("Sum Result:", sumResult);
+
+        invokeAnotherFunction();
+
+        const checkNumberResult = checkNumber(-3);
+        console.log("Number Check Result:", checkNumberResult);
+
+        const dayOfWeek = getDayOfWeek(4);
+        console.log("Day of Week:", dayOfWeek);
+    </script>
+</body>
+</html>
